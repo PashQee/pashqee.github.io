@@ -1,0 +1,51 @@
+html {
+	font-size: 10px;
+}
+@font1 :'museo_reg';
+@color1:  #1b1b1b;
+body {
+	font-family: @font1, sans-serif;
+}
+section{
+	padding: 4rem 0 8rem;
+}
+a{
+	&:hover,:focus,:active {
+		outline: none;
+	}
+}
+button,input,a,textarea{
+	&:focus{
+		outline: none;
+	}
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+.feedback-forms-all{
+	padding: 6rem 0 9rem 0;
+}
+.section-title {
+	margin-bottom: 6rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: @font1, sans-serif;
+	font-size: 3rem;
+	color: @color1;
+}
+.section-title.upper-icon-wrapper {
+	&::before,::after {
+		 content: '';
+  		 display: inline-block;
+  		 width: 1.5rem;
+  		 height: 0.1rem;
+ 		 margin-bottom: 15px;
+ 		 background-color: #5ba2a9;
+	}
+	.upper-icon{
+		margin-bottom: 1.5rem;
+		width: 2rem;
+		height: 2rem;
+	} 
+}
